@@ -1,0 +1,30 @@
+img {width: 100%;
+}
+
+
+
+
+/************** Mobil ******************/
+
+
+
+/************** Desktop ******************/
+
+@media (min-width: 768px) {
+    .grid_4col_1-1-1-1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        img{
+            align-self: stretch;
+            object-fit: cover;
+        }
+    }
+    .billed1{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .billed4{
+        grid-column: span 2;
+    }
+}
